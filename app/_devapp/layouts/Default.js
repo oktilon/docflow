@@ -5,7 +5,7 @@ import MainHeader from "../components/layout/MainHeader";
 import { Container } from "@material-ui/core";
 
 const DefaultLayout = ({ path, routes, children }) => (
-    <Container>
+    <Container maxWidth={false}>
         <MainHeader path={path} routes={routes} />
         <div id="body">
             {children}

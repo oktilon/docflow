@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import { withStyles } from '@material-ui/styles';
 import { AppBar, Toolbar, IconButton, Typography, Button } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import { FormattedMessage } from "react-intl";
 
 const styles = {
 	root: {
@@ -40,7 +41,9 @@ class MainHeader extends React.Component {
 					color="inherit"
 					to='/app'
 					component={NavLink}
-				>App</Button>
+				>
+					<FormattedMessage id="docflow.statements" />
+				</Button>
 			</Toolbar>
 		</AppBar>);
 	}
