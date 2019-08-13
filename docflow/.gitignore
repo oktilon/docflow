@@ -1,18 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/html/app/node_modules
-/html/app/.pnp
-/html/app.pnp.js
-/vendor/*
-www
-www-agro
-node_modules
-app/node_modules
-docflow/node_modules
+/node_modules
+/.pnp
+.pnp.js
 
 # testing
-/app/coverage
+/coverage
+
+# production
+/build
 
 # misc
 .DS_Store
@@ -24,9 +21,3 @@ docflow/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-.phpintel/*
-
-config.php
-base/config.php
-app/_devapp/config.js

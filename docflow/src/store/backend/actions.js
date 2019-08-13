@@ -25,7 +25,7 @@ CGdKsjwV70WxjZIDvY+f9jl6m/k317KILxeqszP0SIzLU/p2xBoZNI3ZH32SxdGO
 VQIDAQAB
 -----END PUBLIC KEY-----`;
 
-export function getPermissions() {
+export function getDocs() {
     return (dispatch, getState) => {
         try {
             axios.get('/menu')
